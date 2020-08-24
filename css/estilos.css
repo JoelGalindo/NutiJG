@@ -32,6 +32,25 @@ header {
     background-position: center;
 }
 
+.button-blog{
+    width: 100px;
+    height: 40px;
+    color: #484848;
+    background-color: #29e963;
+    border-color: #484848;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.button-blog:hover{
+    color: #29e963;
+    background-color: #484848;
+    border-color: #484848;
+    text-decoration: none;
+}
+
 .head {
     text-align: center;
     padding: 0;
