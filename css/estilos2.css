@@ -1,93 +1,20 @@
 *,
-*::before::after {
+::before::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.head {
-    text-align: center;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-}
-
-/* # Site Header
----------------------------------------------------------------------------------------------------- */
-.site-header{
-    position: relative;
-    text-align: center;
-}
-.site-header.fixed{
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-.site-header > .wrap{
-    display: flex;
-    justify-content: space-between;
-}
-.site-header .title-area{
-    align-items: center;
-    display: flex;
-    padding: 1.5rem 2rem;
-}
-.site-header .site-title{
-    padding-right: 2rem;
-}
-.site-header .site-title a{
-    white-space: nowrap;
-}
-
-.site-header .site-description{
-    padding-left: 1.5rem;
-    white-space: nowrap;
-}
-
-.site-header .site-description{
-    display: none;
-}
-
-/* ## Title Area
---------------------------------------------- */
-.header-full-width .title-area{
-    width: 100%;
-}
-.site-title{
-    font-size: 2.6rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-.site-title img{
-    display: block;
-    max-width: 20rem !important;
-    height: auto;
-}
-.site-title a,
-.site-title a:hover,
-.site-title a:focus{
-    color: #000;
-    text-decoration: none;
-}
-.site-title a b{
-    font-weight: 500;
-}
-.site-description{
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 1.5;
-}
-.site-description,
-.site-title{
-    margin-bottom: 0;
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
 }
 
 .hamburguer {
@@ -125,4 +52,21 @@ body {
 .menu-navegacion a {
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    .menu-navegacion {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-navegacion {
+        width: 65vw;
+    }
+
+    .hamburguer {
+        top: 20px;
+        right: 20px;
+    }
 }
