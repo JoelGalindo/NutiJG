@@ -1,0 +1,74 @@
+article, footer, header, main, nav, section{
+    display: block
+}
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    margin: 0 0 5%;
+    width: 30%;
+}
+
+.articles:nth-child(2),
+.articles:nth-child(3n+5) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.articles .img-article {
+    border-radius: 10px 10px 0 0;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    padding-bottom: 64.60%;
+    height: 0;
+}
+
+.articles .cont-article {
+    padding: 3rem 3.5rem;
+}
+
+.articles .header-article{
+    margin: 0 auto 2rem;
+}
+
+.articles .header-article .title a{
+    display: block;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+}
+
+.articles .cont-article .header-article{
+    margin: 0;
+}
+
+.articles .cont-article .description{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* ## Headings
+--------------------------------------------- */
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #333;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 3rem;
+}
+h1{
+    font-size: 3.6rem;
