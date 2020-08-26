@@ -1,1 +1,57 @@
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    margin: 0 0 10%;
+    width: 30%;
+    padding-bottom: 1rem;
+}
 
+.articles:nth-child(2),
+.articles:nth-child(3n+5) {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.img-article {
+    border-radius: 10px 10px 0 0;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    padding-bottom: 64%;
+    height: 0;
+}
+
+.header-article {
+    margin: 0 auto 3px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header-article * {
+    margin: 0;
+}
+
+.title a {
+    display: block;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+}
+
+.description {
+    text-align: center;
+}
+
+.description * {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
